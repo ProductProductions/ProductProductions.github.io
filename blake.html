@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Blake</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+     body {
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.3); /* Adjust opacity to dim the background */
+            z-index: 0.1;
+            pointer-events: none;
+        }
+
+        .content {
+            position: relative;
+            z-index: 2; /* Ensure the content is above the overlay */
+        }
+
+        .text {
+            background-color: rgba(0, 0, 0, 0.6);
+            padding: 15px;
+            border-radius: 5px;
+            display: inline-block; /* Ensure the background only wraps around the content */
+            width: auto; /* Automatically size the background to fit the content */
+            margin-bottom: 10px; /* Add some space between text blocks */
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+        }
+        footer {
+            color: white;
+            text-align: bottom left;
+            padding: 10px;
+            font-size: 14px;
+        }
+        
+        a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: white;
+  text-decoration: underline;
+}
+</style>
+</head>
+<body>
+<div class="content">
+
+
+    <header>
+    <div class="text">
+        <h1>Blake's Projects</h1>
+        <a href="https://scratch.mit.edu/studios/35885526" target="_blank">Scratch Studio</a>
+        </div>
+    </header>
+    <ul>
+    <div class="text">
+        <h2>Scratch</h2>
+        <li><a href="https://scratch.mit.edu/projects/891740385/" target="_blank">DVD Screensaver</a></li>
+        <li><a href="https://scratch.mit.edu/projects/895564132/" target="_blank">Four Function Calculator</a></li>
+        <li><a href="https://scratch.mit.edu/projects/980448832/" target="_blank">Gravity Swap Physics</a></li>
+        <li><a href="https://scratch.mit.edu/projects/1005841551/" target="_blank">Survival Game Concept</a></li>
+        <li>A Constant (Coming Soon)</li>
+    </ul>
+    <ul>
+    <div class="text">
+        <h2>Websites</h2>
+        <li><a href="https://thesitedotcom.github.io/" target="_blank">The Site</a></li>
+        I assissted <a href="../austin" target="_blank">The Site</a> with <a href="https://imasuchi.github.io/" target="_blank">The Boys' Playlists</a> 
+    </ul>
+  
+  <footer>
+        <div class="text-2">
+            <a href="/index">Back to Homepage</a>
+        </div>
+    </footer>
+  
+  <footer>This site was coded by Blake</footer>
+  
+</div>
+</body>
+</html>
